@@ -1,0 +1,59 @@
+{
+  "name": "nx-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "vitepress dev src --open",
+    "build": "vitepress build src",
+    "serve": "vitepress serve src",
+    "format": "prettier --write src/**",
+    "lint-staged": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md}": [
+      "prettier --ignore-path ./.prettierignore --write "
+    ]
+  },
+  "keywords": [],
+  "author": "MEXT Space Term",
+  "license": "ISC",
+  "dependencies": {
+    "@types/markdown-it": "*",
+    "@types/prismjs": "*",
+    "@vue/theme": "1.0.2",
+    "@vueuse/core": "8.5.0",
+    "@vueuse/head": "0.7.6",
+    "markdown-it": "*",
+    "markdown-it-checkbox": "1.1.0",
+    "prismjs": "*",
+    "shiki": "0.10.1",
+    "vite": "2.9.9",
+    "vitepress": "1.0.0-draft.5",
+    "vue": "3.2.36"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "react",
+        "react-dom",
+        "@types/react"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/node": "17.0.23",
+    "husky": "8.0.1",
+    "lint-staged": "12.4.1",
+    "prettier": "2.6.2",
+    "vite-plugin-windicss": "1.8.4",
+    "windicss": "3.5.4"
+  }
+}
