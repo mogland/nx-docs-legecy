@@ -1,0 +1,5 @@
+/* 图片变暗 */
+html.dark img {
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+}
