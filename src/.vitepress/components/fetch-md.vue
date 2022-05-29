@@ -1,5 +1,13 @@
 <template>
-  <div ref="md" class="root">Loading markdown from url {{ src }}...</div>
+  <div ref="md" class="root">
+    <div class="warning custom-block">
+    <p class="custom-block-title">Loading</p>
+    <p>
+        正在抓取 Markdown 源文件...
+    </p>
+    <p>{{ src }}...</p>
+  </div>
+  </div>
 </template>
 
 <script setup lang="ts">

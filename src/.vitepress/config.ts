@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-05-28 19:58:17
  * @LastEditors: Wibus
- * @LastEditTime: 2022-05-29 08:51:00
+ * @LastEditTime: 2022-05-29 21:00:57
  * Coding With IU
  */
 
@@ -34,7 +34,8 @@ export default defineConfig({
     nav: nav(),
     sidebar: {
       '/guide/': sidebarGuide(),
-      '/develop/': sidebarDevelop()
+      '/develop/': sidebarDevelop(),
+      '/themes/': sidebarThemes(),
     },
 
     logo: '/logo.svg',
@@ -64,11 +65,33 @@ export default defineConfig({
 function nav() {
   return [
     { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
-    // { text: 'Configs', link: '/config/', activeMatch: '/config/' },
     { text: 'Develop', link: '/develop/', activeMatch: '/develop/' },
+    { text: 'Themes', link: '/themes/', activeMatch: '/themes/' },
     {
       text: 'Organization',
       link: 'https://github.com/nx-space'
+    }
+  ]
+}
+
+function sidebarThemes() {
+  return [
+    {
+      text: '主题（分离）',
+      collapsible: true,
+      items: [
+        { text: 'nx-A-My', link: '/themes/nx-a-my' },
+        { text: 'effective-octo-meme', link: '/themes/effective-octo-meme' },
+        { text: 'nx-web-demo', link: '/themes/nx-web-demo' },
+      ],
+    },
+    {
+      text: '主题（模板）',
+      collapsible: true,
+      items: [
+        // default
+        { text: 'Default ( For Developer )', link: '/themes/templates/default' },
+      ]
     }
   ]
 }
@@ -82,6 +105,7 @@ function sidebarGuide() {
         { text: '为什么使用 NEXT?', link: '/guide/' },
         { text: '开始使用', link: '/guide/getting-started' },
         { text: '部署 NEXT', link: '/guide/deploying' },
+        { text: '未来发展', link: '/guide/roads' },
         // { text: 'API Reference', link: '/guide/api' },
         // { text: 'Deploying', link: '/guide/deploying' }
       ]
@@ -93,7 +117,8 @@ function sidebarGuide() {
         { text: '启动时的配置', link: '/guide/start-configuration' },
         { text: '运行时的配置', link: '/guide/running-configuration' },
       ]
-    }
+    },
+    ...sidebarThemes(),
   ]
 }
 
