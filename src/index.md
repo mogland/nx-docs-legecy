@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/nx-space
+    - theme: alt
+      text: QQ Group
+      link: https://jq.qq.com/?_wv=1027&k=rfG6JRFl
 
 features:
   - icon: 📦
