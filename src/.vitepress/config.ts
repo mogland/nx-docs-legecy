@@ -3,14 +3,14 @@
  * @author: Wibus
  * @Date: 2022-05-28 19:58:17
  * @LastEditors: Wibus
- * @LastEditTime: 2022-05-29 21:00:57
+ * @LastEditTime: 2022-05-29 21:47:05
  * Coding With IU
  */
 
 
-import { resolve } from 'path'
+import { join, resolve } from 'path'
 import { defineConfig } from 'vitepress'
-
+import Windicss from 'vite-plugin-windicss'
 export default defineConfig({
 
   title: 'NEXT Space',
@@ -27,7 +27,11 @@ export default defineConfig({
     json: {
       stringify: true,
     },
-
+    plugins: [
+      Windicss({
+        config: join(__dirname, '../../windi.config.ts'),
+      }),
+    ]
   },
   themeConfig: {
 
