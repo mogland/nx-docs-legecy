@@ -11,7 +11,7 @@ hero:
       link: /guide/
     - theme: alt
       text: Why NEXT?
-      link: /guide/why
+      link: /guide/
     - theme: alt
       text: View on GitHub
       link: https://github.com/nx-space

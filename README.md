@@ -8,9 +8,9 @@
 
 ```bash
 pnpm i
-pnpm run docs:dev
-pnpm run docs:build
-pnpm run docs:serve
+pnpm run dev
+pnpm run build
+pnpm run serve
 ```
 
 **请注意！请务必在修改后使用 `build` 和 `serve` 查看构建产物是否正常输出！**

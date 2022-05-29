@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-05-28 19:58:17
  * @LastEditors: Wibus
- * @LastEditTime: 2022-05-28 23:15:38
+ * @LastEditTime: 2022-05-29 08:51:00
  * Coding With IU
  */
 
@@ -76,28 +76,24 @@ function nav() {
 function sidebarGuide() {
   return [
     {
-      text: 'Introduction',
+      text: '初次见面',
       collapsible: true,
       items: [
         { text: '为什么使用 NEXT?', link: '/guide/' },
         { text: '开始使用', link: '/guide/getting-started' },
-        { text: '配置项', link: '/guide/configuration' },
-        // { text: 'Deploying', link: '/guide/deploying' },
+        { text: '部署 NEXT', link: '/guide/deploying' },
         // { text: 'API Reference', link: '/guide/api' },
         // { text: 'Deploying', link: '/guide/deploying' }
       ]
     },
     {
-      text: 'Develop',
+      text: '配置项',
       collapsible: true,
       items: [
-        { text: '前端开发指南', link: '/develop/' },
-        { text: '服务端 API', link: '/develop/api' },
-        { text: '注意事项', link: '/develop/tips' },
+        { text: '启动时的配置', link: '/guide/start-configuration' },
+        { text: '运行时的配置', link: '/guide/running-configuration' },
       ]
-    },
-
-
+    }
   ]
 }
 
