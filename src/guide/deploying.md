@@ -35,6 +35,10 @@ docker compose up -d # 启动/restart容器
 node index.js --PORT=3001 --DB_DATABASE=nest-server --DB_HOST=127.0.0.1 --DB_PORT=3306 --DB_USERNAME=root --DB_PASSWORD=moonwibus
 ```
 
+:::warning
+此方法启动的无法持续化，你需要对 ecosystem.config.js 进行更改
+:::
+
 若你需要手动打包 bundle，可以使用如下命令：
 
 ```bash
@@ -42,10 +46,6 @@ npm run bundle
 ```
 
 产物位于 out 文件夹下，可以直接运行。
-
-:::warning
-此方法启动的无法持续化，你需要对 ecosystem.config.js 进行更改
-:::
 
 **请注意，使用bundle启动时 你需要后置参数：**
 
@@ -58,6 +58,7 @@ npm run bundle
 - CORS_SERVER：允许跨域来源，默认值请看代码
 - JWT_KEY：jwt密钥，不建议使用默认值
 - theme：视图引擎模板设置，详情请见 **「EJS Templates Engine」** 章节
+- ENGINE：若你需要使用到*视图引擎*，则你可以将此设置为 `1`，默认不启动，详情请见 **「EJS Templates Engine」** 章节
 
 
 #### 持续化启动
