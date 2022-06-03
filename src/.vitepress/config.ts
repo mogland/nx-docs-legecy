@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-05-28 19:58:17
  * @LastEditors: Wibus
- * @LastEditTime: 2022-05-29 21:47:05
+ * @LastEditTime: 2022-06-03 08:29:43
  * Coding With IU
  */
 
@@ -45,9 +45,9 @@ export default defineConfig({
     logo: '/logo.svg',
 
     editLink: {
-      repo: 'vitejs/vite',
+      repo: 'nx-space/nx-docs',
       branch: 'main',
-      dir: 'docs',
+      dir: 'src',
       text: 'Suggest changes to this page'
     },
 

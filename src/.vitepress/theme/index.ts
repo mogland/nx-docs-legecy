@@ -3,32 +3,40 @@
  * @author: Wibus
  * @Date: 2022-05-28 21:49:03
  * @LastEditors: Wibus
- * @LastEditTime: 2022-05-28 22:10:25
+ * @LastEditTime: 2022-06-03 08:44:35
  * Coding With IU
  */
 
 
 // import './styles/code.css'
 import './styles/style.css'
-
-import { App, h, watch } from 'vue'
-import Theme from 'vitepress/theme'
 import { createHead } from '@vueuse/head'
+// @ts-ignore
+import Banner from './components/Banner.vue'
+import DefaultTheme from 'vitepress/theme'
+import { App, h, watch } from 'vue'
+import { useRouter } from 'vitepress'
 
-// export default {
-//   ...Theme,
-//   Layout() {
-//     return h(Theme.Layout, null, {
-//       // 'home-features-after': () => h(HomeSponsors)
-//     })
-//   }
-// }
+export default {
+  ...DefaultTheme,
+  Layout: () => {
+    // const router = useRouter()
 
-export default Object.assign({}, Theme, {
-  enhanceApp({ app }: { app: App }) {
-    const head = createHead()
-    app.use(head)
+    // watch(
+    //   () => router.route.data.relativePath,
+    //   (path) => {
+    //     ;(window as any).umami.trackView(path)
+    //     ;(window as any).umami.trackEvent(router.route.data.title, 'view')
+    //   },
+    //   { immediate: true }
+    // )
+    // @ts-ignore
+    return h(DefaultTheme.Layout, null, {
+      'home-hero-before': () => h(Banner)
+    })
   },
-})
-
-// export default Theme
+  enhanceHead({ app }: { app: App }) {
+    const heads = createHead()
+    app.use(heads)
+  }
+}
