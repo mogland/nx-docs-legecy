@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-05-28 21:49:03
  * @LastEditors: Wibus
- * @LastEditTime: 2022-06-03 08:44:35
+ * @LastEditTime: 2022-06-22 13:47:04
  * Coding With IU
  */
 
@@ -14,8 +14,7 @@ import { createHead } from '@vueuse/head'
 // @ts-ignore
 import Banner from './components/Banner.vue'
 import DefaultTheme from 'vitepress/theme'
-import { App, h, watch } from 'vue'
-import { useRouter } from 'vitepress'
+import { App, h } from 'vue'
 
 export default {
   ...DefaultTheme,
