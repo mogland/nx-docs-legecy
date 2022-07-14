@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-05-28 19:58:17
  * @LastEditors: Wibus
- * @LastEditTime: 2022-06-03 08:29:43
+ * @LastEditTime: 2022-07-14 21:33:06
  * Coding With IU
  */
 
@@ -45,9 +45,7 @@ export default defineConfig({
     logo: '/logo.svg',
 
     editLink: {
-      repo: 'nx-space/nx-docs',
-      branch: 'main',
-      dir: 'src',
+      pattern: 'https://github.com/nx-space/nx-docs/edit/main/src/:path',
       text: 'Suggest changes to this page'
     },
 

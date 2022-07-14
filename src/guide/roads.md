@@ -18,9 +18,9 @@ NEXT 的大致方向 **<u>并不会</u>** 向知识**付费**, xx付费的方向
 - ~~基本文档支持~~ <Badge text="Done in v0.3.6" />
 - 支持动态接口
 - PTY 支持
-- 从 MySQL 至 MongoDB
-- 从 Express 至 Fastify
-- 引入 Redis 支持
+- ~~从 MySQL 至 MongoDB~~ <Badge text="Done in v1.0.0" />
+- ~~从 Express 至 Fastify~~ <Badge text="Done in v1.0.0" />
+- ~~引入 Redis 支持~~ <Badge text="Done in v1.0.0" /> 
 - 后台内主题市场
 - 主题可视化配置
 - 第一个前端主题

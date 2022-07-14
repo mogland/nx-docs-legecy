@@ -2,10 +2,11 @@
 
 ## 服务端部署
 
-**_目前 nx-server 依赖于 nodejs 和 MySQL 环境_**
+**_目前 nx-server 依赖于 nodejs14以上, Mongo, Redis 环境_**
 
-nx-server 有三种启动方式：运行 bundle **(recommended)** / 编译运行 (for development) / docker镜像 **(recommended)**
+nx-server 有两种启动方式：运行 bundle **(recommended)** / 编译运行 (for development)
 
+<!-- 
 ### Docker 部署  (Beta)
 
 > Beta 功能，稳定性不确定，但大体是可以正常使用了
@@ -21,7 +22,7 @@ docker compose pull # 拉取最新镜像
 docker compose up -d # 启动/restart容器
 ```
 
-关于反向代理：默认的 docker-compose 已设置为映射到 .env 中的 PORT 所设置的端口上，根据 PORT 进行反代即可
+关于反向代理：默认的 docker-compose 已设置为映射到 .env 中的 PORT 所设置的端口上，根据 PORT 进行反代即可 -->
 
 ### Bundle 部署 (Beta)
 

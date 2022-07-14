@@ -34,7 +34,7 @@
     "prismjs": "*",
     "shiki": "0.10.1",
     "vite": "2.9.9",
-    "vitepress": "1.0.0-alpha.1",
+    "vitepress": "1.0.0-alpha.4",
     "vue": "3.2.36"
   },
   "pnpm": {

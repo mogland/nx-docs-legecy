@@ -3,18 +3,18 @@
  * @author: Wibus
  * @Date: 2022-05-28 21:49:03
  * @LastEditors: Wibus
- * @LastEditTime: 2022-06-22 13:47:04
+ * @LastEditTime: 2022-07-14 19:43:38
  * Coding With IU
  */
 
 
 // import './styles/code.css'
-import './styles/style.css'
 import { createHead } from '@vueuse/head'
 // @ts-ignore
 import Banner from './components/Banner.vue'
 import DefaultTheme from 'vitepress/theme'
 import { App, h } from 'vue'
+import './styles/style.css'
 
 export default {
   ...DefaultTheme,
