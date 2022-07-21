@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-06-03 08:33:23
  * @LastEditors: Wibus
- * @LastEditTime: 2022-06-03 08:37:02
+ * @LastEditTime: 2022-07-21 14:16:53
  * Coding With IU
 -->
 <script setup>
@@ -22,9 +22,9 @@ function dismiss() {
 
 <template>
   <div class="banner" v-if="open">
-     <code>WIP</code>｜项目正在开发中，暂时无法使用至生产环境 &nbsp;
+     <code>Release</code>｜NEXT Core v1.5.1 已发布！ &nbsp;
     <a
-      href="https://github.com/nx-space"
+      href="https://github.com/nx-space/core/releases/tag/v1.5.1"
       target="_blank"
       >Learn more</a
     >
