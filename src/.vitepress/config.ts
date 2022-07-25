@@ -3,7 +3,7 @@
  * @author: Wibus
  * @Date: 2022-05-28 19:58:17
  * @LastEditors: Wibus
- * @LastEditTime: 2022-07-14 21:33:06
+ * @LastEditTime: 2022-07-25 14:59:39
  * Coding With IU
  */
 
@@ -68,7 +68,7 @@ function nav() {
   return [
     { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
     { text: 'Develop', link: '/develop/', activeMatch: '/develop/' },
-    { text: 'Themes', link: '/themes/', activeMatch: '/themes/' },
+    // { text: 'Themes', link: '/themes/', activeMatch: '/themes/' },
     {
       text: 'Organization',
       link: 'https://github.com/nx-space'
@@ -112,15 +112,7 @@ function sidebarGuide() {
         // { text: 'Deploying', link: '/guide/deploying' }
       ]
     },
-    {
-      text: '配置项',
-      collapsible: true,
-      items: [
-        { text: '启动时的配置', link: '/guide/start-configuration' },
-        { text: '运行时的配置', link: '/guide/running-configuration' },
-      ]
-    },
-    ...sidebarThemes(),
+    // ...sidebarThemes(),
   ]
 }
 
