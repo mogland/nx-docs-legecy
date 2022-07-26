@@ -10,7 +10,7 @@ specifiers:
   lint-staged: 13.0.3
   markdown-it: '*'
   markdown-it-checkbox: 1.1.0
-  prettier: 2.6.2
+  prettier: 2.7.1
   prismjs: '*'
   shiki: 0.10.1
   vite: 2.9.9
@@ -36,7 +36,7 @@ devDependencies:
   '@types/node': 17.0.23
   husky: 8.0.1
   lint-staged: 13.0.3
-  prettier: 2.6.2
+  prettier: 2.7.1
   vite-plugin-windicss: 1.8.4_vite@2.9.9
   windicss: 3.5.4
 
@@ -1114,8 +1114,8 @@ packages:
     resolution: {integrity: sha512-GLjn0I3r6ka+NvxJUppsVFqb4V0qDTEHT/QxHlidPuClGaxF/4AI2Qti4a0cv3XMh5n1+D3hLScW10LRIm5msQ==}
     dev: false
 
-  /prettier/2.6.2:
-    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
+  /prettier/2.7.1:
+    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
