@@ -1,0 +1,1 @@
+import{o as e,c as t,d as _}from"./app.cf482cde.js";const a=_("",5),r=[a],p=JSON.parse('{"title":"\u672A\u6765\u53D1\u5C55","description":"","frontmatter":{},"headers":[],"relativePath":"guide/roads.md"}'),s={name:"guide/roads.md"},i=Object.assign(s,{setup(o){return(n,d)=>(e(),t("div",null,r))}});export{p as __pageData,i as default};
