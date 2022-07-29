@@ -38,7 +38,7 @@ jobs:
             - recursive: true
               args: [--no-frozen-lockfile]
       - run: pnpm run build
-      - run: echo 'nx-docs.iucky.cn' > dist/CNAME
+      - run: echo 'nx.js.org' > dist/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
